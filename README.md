@@ -61,4 +61,4 @@
 
 
 ##### *** Sample Output. ***
-![picture](https://bitbucket.org/VinayKuresi/vinay_kuresi_march_batch_1/raw/05bb3b077e8a7ebd3d0ff907db1d1ac1486469fe/Assignments/Assignment_3/images/search_filter.PNG)
+![Alt text](images/search_filter.PNG)
