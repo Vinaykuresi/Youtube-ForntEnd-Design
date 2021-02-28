@@ -43,7 +43,7 @@
 
 ##### *** Sample code computing Scores. ***
 ```
-// computing the list of similarities
+ computing the list of similarities
         var sims = []
         for(var doc in this.titles){
             var score = 0.0
@@ -59,6 +59,6 @@
         return sims
     }
 
-
+```
 ##### *** Sample Output. ***
 ![Alt text](images/search_filter.PNG)
