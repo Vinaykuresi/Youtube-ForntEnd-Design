@@ -37,10 +37,6 @@
 #### *** Final result display, based in search. *** 
 ![picture](https://bitbucket.org/VinayKuresi/vinay_kuresi_march_batch_1/raw/05bb3b077e8a7ebd3d0ff907db1d1ac1486469fe/Assignments/Assignment_3/images/final_result.PNG)
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5654ab5ae558bcf6854544e569755cb477c47819
 
 #### *** Add on Sample Machine learning Algorithm written in JavaScript to search the list of Video, and filter Videos based on highest accuracy, providing the Threshold value. The result in a Array containing the accuracy in descending order. *** 
 
@@ -62,11 +58,7 @@
         }
         return sims
     }
-<<<<<<< HEAD
-```  
-=======
-```
->>>>>>> 5654ab5ae558bcf6854544e569755cb477c47819
+
 
 ##### *** Sample Output. ***
 ![picture](https://bitbucket.org/VinayKuresi/vinay_kuresi_march_batch_1/raw/05bb3b077e8a7ebd3d0ff907db1d1ac1486469fe/Assignments/Assignment_3/images/search_filter.PNG)
