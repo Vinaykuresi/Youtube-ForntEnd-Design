@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      class="icon-logo"
+      rel="icon"
+      href="https://s.ytimg.com/yts/img/favicon_32-vflOogEID.png"
+      type="image/x-icon"
+    />
+
+    <!-- Future Use -->
+    <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- sidenav bar -->
+    <side-nav class="sidenav-bar hidden">
+      <div class="overlay" onclick="openSideNav()"></div>
+      <div class="menus">
+        <div class="menu-left">
+          <i
+            class="fa fa-navicon"
+            aria-hidden="true"
+            onclick="openSideNav()"
+          ></i>
+          <img class="logo" src="./assets/main-logo.jpg" alt="youtube logo" />
+        </div>
+        <div class="menu-item">
+          <li>
+            <i class="fa fa-home" aria-hidden="true"></i>
+            Home
+          </li>
+          <li>
+            <i class="fa fa-fire" aria-hidden="true"></i>
+            Trending
+          </li>
+          <li>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            Subscription
+          </li>
+          <div class="divider"></div>
+
+          <li>
+            <i class="fa fa-clone" aria-hidden="true"></i>
+            Library
+          </li>
+          <li>
+            <i class="fa fa-history" aria-hidden="true"></i>
+            History
+          </li>
+          <li>
+            <i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+            Your videos
+          </li>
+          <li>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            Watch later
+          </li>
+          <li>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            Show more
+          </li>
+          <div class="divider"></div>
+          <li>
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            Logout
+          </li>
+        </div>
+      </div>
+    </side-nav>
+
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="menu-left">
+        <i class="fa fa-navicon" aria-hidden="true" onclick="openSideNav()"></i>
+        <img class="logo" src="./assets/main-logo.jpg" alt="youtube logo" />
+      </div>
+      <div class="search">
+        <input type="text" name="search" id="search-input" placeholder="Search" autocomplete="off"/>
+        <div class="search-list hidden">
+          <ul class="search-list-container"></ul>
+        </div>
+        <button>
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="menus">
+        <i class="fa fa-video-camera" aria-hidden="true"></i>
+        <i class="fa fa-align-justify" aria-hidden="true"></i>
+        <i class="fa fa-bell" aria-hidden="true"></i>
+        <img
+          src="https://www.w3schools.com/howto/img_avatar.png"
+          alt="profile-image"
+        />
+      </div>
+    </nav>
+
+    <!-- main body -->
+    <section class="main-section">
+      <!-- left side -->
+      <div class="current-play">
+        <iframe frameborder="0" class="main-video" src=""> </iframe>
+        <div class="description pv-5">
+          <h3 class="video-title"></h3>
+          <div class="review">
+            <h4 class="review-details">
+              <span class="views"></span> views&nbsp;•&nbsp;<span
+                id="date"
+              ></span>
+            </h4>
+            <div class="video-sentiments flex-c ph-5">
+              <div class="like flex-a-c ph-5">
+                <i class="fa fa-thumbs-up" style="cursor: pointer;" for="up" aria-hidden="true"></i>
+                <span class="ph-5"></span>
+              </div>
+              <div class="dislike flex-a-c ph-5">
+                <i class="fa fa-thumbs-down" style="cursor: pointer;" for="down" aria-hidden="true"></i>
+                <span class="ph-5"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <h4><u> Comments</u> :</h4>
+        <br />
+        <div class="comment">
+          <h4 class="loggedin-user">Vinay Kuresi:</h4>
+          <div>
+            <textarea class="user-comment" rows="4" cols="100"> </textarea>
+          </div>
+          <button
+            class="comment-submit-button"
+            type="submit"
+            form="form1"
+            value="Submit"
+          >
+            Submit
+          </button>
+        </div>
+        <br />
+        <br />
+        <div class="comment-list">
+          <h4 class="user-name"></h4>
+          <h5 class="comment pv-5"></h5>
+          <div class="video-sentiments flex-a-c pv-5">
+            <div class="like flex-a-c pr-5">
+              <i class="fa fa-thumbs-up" for="up" aria-hidden="true"></i>
+              <span class="ph-5"></span>
+            </div>
+            <div class="dislike flex-a-c">
+              <i class="fa fa-thumbs-down" for="down" aria-hidden="true"></i>
+              <span class="ph-5"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right side -->
+      <div class="right-side-video-list">
+      </div>
+    </section>
+  
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./test.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script> -->
+    <!-- <script src="./bootstrap/js/bootstrap.min.js"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+  </body>
+</html>
+             
